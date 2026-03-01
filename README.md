@@ -46,7 +46,7 @@ A secure, enterprise-grade runtime for autonomous agents with policy gating, aud
    ```powershell
    python -m dashboard.app
    *Note: Run this in a separate terminal to watch real-time telemetry.*
-<img width="2532" height="1372" alt="image" src="https://github.com/user-attachments/assets/25303e7c-64ab-4692-ad70-7f2ea2ee0668" />
+  <img width="2532" height="1372" alt="image" src="https://github.com/user-attachments/assets/25303e7c-64ab-4692-ad70-7f2ea2ee0668" />
 
    
 
