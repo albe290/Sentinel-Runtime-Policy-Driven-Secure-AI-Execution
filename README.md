@@ -2,6 +2,12 @@
 
 A secure, enterprise-grade runtime for autonomous agents with policy gating, auditable automation, and human-in-the-loop controls.
 
+## The Problem (Why This Exists)
+
+LLMs are increasingly granted tool execution capabilities. Traditional guardrails operate at the prompt or output level. 
+
+This project enforces security at the ONLY reliable boundary: **runtime action execution**.
+
 ## Core Features
 
 - **Policy Enforcement**: Centralized authority (`policy.yaml`) to define allowed tools, domain allowlists, and dynamic risk weights.
