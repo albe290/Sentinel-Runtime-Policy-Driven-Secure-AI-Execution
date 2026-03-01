@@ -40,7 +40,7 @@ A secure, enterprise-grade runtime for autonomous agents with policy gating, aud
    ```
    *Note: This will pause and request approval for the HTTP step.*
 
-   ![Main Agent Execution](docs/main.py.png)
+   <img src="docs/main.py.png" alt="Main Agent Execution" />
 
 3. **Run ASOC Dashboard**:
    ```powershell
@@ -59,7 +59,7 @@ A secure, enterprise-grade runtime for autonomous agents with policy gating, aud
    ```
    *(Verifies 18/18 core security gates).*
 
-   ![Security Tests Passing](docs/Security%20tests%20.png)
+   <img src="docs/Security%20tests%20.png" alt="Security Tests Passing" />
 
 ## Security Design
 
@@ -72,9 +72,9 @@ The true power of this architecture is the Declarative Security Authority (`poli
 **State 1: "Trust but Verify" (Block Threshold: 90)**
 In this default state, the agent has room to operate. The Risk Engine relies on specific guardrails (like Domain Allowlists or Regex patterns) to intercept known bad payloads:
 
-![Trust but Verify Terminal Phase](docs/Block%20Threshold%2090%20image%201.png)
+<img src="docs/Block%20Threshold%2090%20image%201.png" alt="Trust but Verify Terminal Phase" />
 <br>
-![Trust but Verify Dashboard Phase](docs/Block%20Threshold%2090%20image%202.png)
+<img src="docs/Block%20Threshold%2090%20image%202.png" alt="Trust but Verify Dashboard Phase" />
 
 ```text
 [ATTACK] Testing: supply_chain_poison
@@ -84,9 +84,9 @@ Mitigation: Host 'trusted-source.com' not in allowlist
 **State 2: "Zero-Trust Lockdown" (Block Threshold: 30)**
 By simply lowering the `block` number in `policy.yaml` to `30`, the entire system enters a lockdown state. The Risk Engine becomes so strict that it kills actions mathematically, *before* static guardrails even evaluate them:
 
-![Zero-Trust Lockdown Terminal Phase](docs/Zero%20Trust%20Lockdown%20Block%20Threshold%2030.png)
+<img src="docs/Zero%20Trust%20Lockdown%20Block%20Threshold%2030.png" alt="Zero-Trust Lockdown Terminal Phase" />
 <br>
-![Zero-Trust Lockdown Dashboard Phase](docs/Zero%20Trust%20Lockdown%20Block%20Threshold%2030%20image%202.png)
+<img src="docs/Zero%20Trust%20Lockdown%20Block%20Threshold%2030%20image%202.png" alt="Zero-Trust Lockdown Dashboard Phase" />
 
 ```text
 [ATTACK] Testing: supply_chain_poison
@@ -95,9 +95,9 @@ Mitigation: Risk BLOCKED (55): policy_base_risk:30; network_access:+15; internal
 *The architecture intercepted the adversarial payload purely because the context became too dangerous.*
 
 ### Live Environment Previews
-![Dashboard Execution Tracking](docs/dashboard_execution.png)
+<img src="docs/dashboard_execution.png" alt="Dashboard Execution Tracking" />
 <br>
-![Red Team Attack Lab Defense](docs/redteam_execution.png)
+<img src="docs/redteam_execution.png" alt="Red Team Attack Lab Defense" />
 
 
 ## AI Security Architecture: Attack → Defense Mapping
