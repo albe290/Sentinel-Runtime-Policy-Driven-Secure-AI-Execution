@@ -45,13 +45,17 @@ A secure, enterprise-grade runtime for autonomous agents with policy gating, aud
 3. **Run ASOC Dashboard**:
    ```powershell
    python -m dashboard.app
-   ```
    *Note: Run this in a separate terminal to watch real-time telemetry.*
+<img width="2532" height="1372" alt="image" src="https://github.com/user-attachments/assets/25303e7c-64ab-4692-ad70-7f2ea2ee0668" />
+
+   
 
 4. **Run Red Team Attack Lab**:
    ```powershell
    python -m redteam.harness
    ```
+   <img width="2547" height="1256" alt="image" src="https://github.com/user-attachments/assets/4d28ab2b-0acf-46c3-a2fb-255e9a7fd0fa" />
+
 
 5. **Run Security Tests**:
    ```powershell
