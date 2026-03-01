@@ -8,6 +8,8 @@ LLMs are increasingly granted tool execution capabilities. Traditional guardrail
 
 This project enforces security at the ONLY reliable boundary: **runtime action execution**.
 
+![Policy-Driven AI Runtime Architecture](docs/Policy%20Driven%20AI%20Runtime.png)
+
 ## Core Features
 
 - **Policy Enforcement**: Centralized authority (`policy.yaml`) to define allowed tools, domain allowlists, and dynamic risk weights.
