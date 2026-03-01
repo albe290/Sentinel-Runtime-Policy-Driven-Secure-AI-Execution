@@ -1,6 +1,6 @@
-# 🏟️ Project Architecture: The "Game Film" Review
+# 🏟️ Sentinel-Runtime Architecture: Policy-Driven Secure AI
 
-This document explains **how** and **why** the Safe Agent Skeleton works. Use this to review the system logic whenever we make major changes.
+This document explains **how** and **why** the Safe Agent Skeleton works. As a fully completed and adversarially-tested runtime, this architecture serves as the definitive reference for its "Safe by Design" implementation.
 
 ---
 
