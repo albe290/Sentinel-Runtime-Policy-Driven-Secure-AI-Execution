@@ -1,4 +1,4 @@
-# Safe Agent Skeleton
+# Sentinel-Runtime
 
 A secure, enterprise-grade runtime for autonomous agents with policy gating, auditable automation, and human-in-the-loop controls.
 
@@ -94,11 +94,17 @@ Mitigation: Risk BLOCKED (55): policy_base_risk:30; network_access:+15; internal
 ```
 *The architecture intercepted the adversarial payload purely because the context became too dangerous.*
 
+### Live Environment Previews
+![Dashboard Execution Tracking](docs/dashboard_execution.png)
+<br>
+![Red Team Attack Lab Defense](docs/redteam_execution.png)
+
+
 ## AI Security Architecture: Attack → Defense Mapping
 
 As part of the threat modeling for this runtime, we map known AI failure modes and attacks to specific defensive layers implemented in this project.
 
-| Attack Vector / Failure Mode | Risk Profile | Defense Layer (Safe Agent Skeleton) | Mitigation Strategy |
+| Attack Vector / Failure Mode | Risk Profile | Defense Layer (Sentinel-Runtime) | Mitigation Strategy |
 | :--- | :--- | :--- | :--- |
 | **Prompt Injection** / Instruction Override | Agent executes unintended commands | `Validator` (Input Pre-processing) | Integrity checks on inputs; rejecting known adversarial prompts before reaching the LLM. |
 | **Jailbreaking** / Role Manipulation | Agent bypasses policy or impersonates admin | `Policy Engine` (Execution Bounds) | Hard authority bounds. The LLM is never the authority; the `Policy` object dictates allowed actions. |

@@ -1,6 +1,6 @@
-# 🏆 Safe Agent Skeleton: The Ultimate Showcase Guide
+# 🏆 Sentinel-Runtime: The Ultimate Showcase Guide
 
-Welcome to the **Safe Agent Skeleton**. If you are looking for a standard "Hello World" LangChain tutorial, you are in the wrong place. 
+Welcome to **Sentinel-Runtime**. If you are looking for a standard "Hello World" LangChain tutorial, you are in the wrong place.  
 
 This project is a **Policy-Driven, Adversarially-Tested, Universal AI Runtime**. It is designed to act as a secure "cage" or "referee" to test arbitrary LLM agents against dangerous capabilities without compromising the host machine.
 
@@ -57,4 +57,4 @@ Open `policy/policy.yaml`. Lower the `block` threshold from `90` to `30`. Run th
 
 As LLMs become more capable, the barrier to building AI features goes down. The barrier to building *Safe* AI features goes up.
 
-The **Safe Agent Skeleton** demonstrates operational maturity. It proves that before we give autonomous software the keys to the kingdom, we must build the **Auditable, Policy-Driven infrastructure** required to keep it on a leash.
+The **Sentinel-Runtime** demonstrates operational maturity. It proves that before we give autonomous software the keys to the kingdom, we must build the **Auditable, Policy-Driven infrastructure** required to keep it on a leash.
